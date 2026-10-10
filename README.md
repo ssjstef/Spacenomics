@@ -66,17 +66,20 @@ Tools: GeoPandas, Shapely
 Street-network geometries are processed to ensure they match sDNA specifications. This stage includes splitting network lines at junctions and removing duplicate or overlapping street segments.
 
 **2. sDNA Calculation and Spatial Aggregation**
+
 Tools: sDNA, GeoPandas
 The cleaned street network is analysed using sDNA to calculate spatial network metrics.
 Street-segment metrics are then spatially associated with Lower Layer Super Output Areas (LSOAs) and aggregated to produce area-level explanatory variables.
 
 **3. Data Preparation and Standardisation**
+
 Tools: Pandas, GeoPandas, NumPy
 Spatial network metrics are aggregated with economic data to construct the modelling dataset.
 The current implementation uses 2023 GVA per square kilometre as its target variable. Predictors and the target are standardised before model fitting.
 Spatially clustered train/test partitions are also used to investigate out-of-sample generalisation across different areas.
 
 **4. Bayesian Model Estimation**
+
 Tools: PyMC, libpysal
 A Bayesian spatial regression model is used to estimate the relationship between street-network characteristics and local economic productivity.
 The model incorporates:
@@ -87,6 +90,7 @@ Posterior sampling to represent uncertainty in estimated parameters.
 This approach provides a distribution of plausible parameter values and predictions rather than relying solely on point estimates.
 
 **5. Differential Policy Predictive Engine**
+
 Tools: PyMC, GeoPandas, ArviZ
 The final stage investigates hypothetical changes to the street network.
 A modified network is processed in the same way as the base network (cleaning, sDNA). Differences in the resulting network metrics are then evaluated using posterior samples from the fitted Bayesian model.
