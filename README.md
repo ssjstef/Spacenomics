@@ -1,6 +1,7 @@
-Spacenomics
-A Bayesian approach to spatial economic forecasting and policy impact analysis.
-Introduction
+## Spacenomics
+### A Bayesian approach to spatial economic forecasting and policy impact analysis.
+
+## Introduction
 Spacenomics is a research project investigating the viability of Bayesian inference for economic forecasting using spatial data.
 The project explores the relationship between urban street-network structure and local economic productivity, combining spatial network analysis with Bayesian statistical modelling to estimate how changes to the built environment may influence economic outcomes.
 Using Cardiff, Wales, as an initial case study, Spacenomics integrates street-network metrics with small-area economic data (LSOA level) to model Gross Value Added (GVA) density. The resulting model is used to explore potential economic shifts under hypothetical changes to the street network.
