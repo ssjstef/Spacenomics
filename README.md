@@ -8,6 +8,7 @@ Using Cardiff, Wales, as an initial case study, Spacenomics integrates street-ne
 The ultimate aim is to develop a prediction engine capable of estimating the potential economic implications of proposed spatial interventions.
 ### Tech Stack
 |**Technology**|**Purpose**|
+|--------------|-----------|
 |GeoPandas|Geospatial data processing, spatial joins and aggregation|
 |sDNA|Spatial network analysis and street-network metric calculation
 |Shapely|Geometric operations, network cleaning and line splitting
