@@ -1,32 +1,22 @@
 ## Spacenomics
 ### A Bayesian approach to spatial economic forecasting and policy impact analysis.
 
-## Introduction
+### Introduction
 Spacenomics is a research project investigating the viability of Bayesian inference for economic forecasting using spatial data.
 The project explores the relationship between urban street-network structure and local economic productivity, combining spatial network analysis with Bayesian statistical modelling to estimate how changes to the built environment may influence economic outcomes.
 Using Cardiff, Wales, as an initial case study, Spacenomics integrates street-network metrics with small-area economic data (LSOA level) to model Gross Value Added (GVA) density. The resulting model is used to explore potential economic shifts under hypothetical changes to the street network.
 The ultimate aim is to develop a prediction engine capable of estimating the potential economic implications of proposed spatial interventions.
-Tech Stack
-Technology
-Purpose
-GeoPandas
-Geospatial data processing, spatial joins and aggregation
-sDNA
-Spatial network analysis and street-network metric calculation
-Shapely
-Geometric operations, network cleaning and line splitting
-Pandas
-Data processing and economic dataset preparation
-PyMC
-Bayesian regression, posterior sampling and probabilistic prediction
-ArviZ
-Bayesian inference diagnostics and posterior analysis
-scikit-learn
-Spatial clustering for train/test data partitioning
-libpysal
-Spatial adjacency weights for neighbourhood-based modelling
-NetworkX
-Network data structures and analysis
+### Tech Stack
+|**Technology**|**Purpose**|
+|GeoPandas|Geospatial data processing, spatial joins and aggregation|
+|sDNA|Spatial network analysis and street-network metric calculation
+|Shapely|Geometric operations, network cleaning and line splitting
+|Pandas|Data processing and economic dataset preparation
+|PyMC|Bayesian regression, posterior sampling and probabilistic prediction
+|ArviZ|Bayesian inference diagnostics and posterior analysis
+|scikit-learn|Spatial clustering for train/test data partitioning
+|libpysal|Spatial adjacency weights for neighbourhood-based modelling
+|NetworkX|Network data structures and analysis
 
 Pipeline
 The Spacenomics workflow transforms raw street-network and economic data into probabilistic estimates of the potential economic impacts of spatial interventions.
